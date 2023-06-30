@@ -1,18 +1,20 @@
-let el = document.getElementByTagName("strong");
-function highlight()
-	{
+function highlight() {
     //Write your code here
-	for(let i=0; i<el.length-1; i++)
-		{
-			el[i].style.color = "green";
-		}
-    }
+const boldWords = document.querySelectorAll('strong');
 
-function return_normal() 
-{
+  for (let i = 0; i < boldWords.length; i++) {
+    boldWords[i].classList.add('bold-highlight');
+  }
+
+}
+
+
+function return_normal() {
     //Write your code here
-	for(let i=0; i<el.length-1; i++)
-		{
-			el[i].style.color = "black";
-		}  
+const boldWords = document.querySelectorAll('strong');
+
+  for (let i = 0; i < boldWords.length; i++) {
+    boldWords[i].classList.remove('bold-highlight');
+  }
+    
 }
